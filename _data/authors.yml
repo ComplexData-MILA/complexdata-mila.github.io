@@ -452,13 +452,13 @@ Kellin Pelrine:
   avatar: /assets/images/bio/kellin.pelrine.avatar.webp
   bio: AI Security, AI Agents. Cross-functional solutions on a foundation of technical
     research.
-  note: CTO @ Stitch, Research Advisor @ FAR.AI
+  note: Research Scientist @ FAR.AI
   semantic_scholar_id: "104333826"
   auto_update_publications: true
   current_role:
     type: None
     title: _No response_
-    affiliation: Research Scientist @ FAR.AI
+    affiliation: Mila, McGill
   social_media_links:
   - label: Website
     url: https://kellinpelrine.github.io/
