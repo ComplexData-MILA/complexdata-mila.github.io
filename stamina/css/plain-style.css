@@ -85,3 +85,16 @@ font-size: 18pt;
         margin-right: 15px;
     }
 }
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-brand:empty {
+    display: none;
+  }
+}
