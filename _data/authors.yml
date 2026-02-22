@@ -1,3 +1,23 @@
+Andrey Ambartsumov:
+  name: Andrey Ambartsumov
+  auto_update_publications: false
+  current_role:
+    type: Student
+    title: Undergraduate
+    start_date: Winter 2026
+    advisor: Victor Livernoche, Reihaneh Rabbany
+    affiliation: McGill
+    research_directions:
+    - online-crime
+  bio: Generative AI, Graph Learning, Deep Learning
+  avatar: /assets/images/bio/Andrey Ambartsumov.jpg
+  social_media_links:
+  - label: Website
+    url: https://an-andrey.github.io/
+  - label: GitHub
+    url: https://github.com/an-andrey
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/andrey-ambartsumov/
 Heather Bosiljevac:
   name: Heather Bosiljevac
   current_role:
@@ -488,7 +508,7 @@ Kellin Pelrine:
     start_date: Fall 2022
     affiliation: Mila, McGill
     research_directions:
-      - poli-sci
+    - poli-sci
   social_media_links:
   - label: Website
     url: https://kellinpelrine.github.io/
