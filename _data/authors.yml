@@ -40,7 +40,7 @@ Aurélien Bück-Kaeffer:
   name: Aurélien Bück-Kaeffer
   auto_update_publications: false
   current_role:
-    type: Collaborator
+    type: Student
     title: Intern
     start_date: Feb 2025
     affiliation: Mila, McGill
@@ -770,7 +770,7 @@ Svetlana Zhuk:
   name: Svetlana Zhuk
   auto_update_publications: false
   current_role:
-    type: Student
+    type: Collaborator
     title: Master
     start_date: May 2024
     affiliation: Mila, University of Montreal
