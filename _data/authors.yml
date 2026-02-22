@@ -579,6 +579,24 @@ Reihaneh Rabbany:
   - label: LinkedIn
     url: https://www.linkedin.com/in/reihaneh-rabbany/
 
+Dorsaf Sallami:
+  name: Dorsaf Sallami
+  auto_update_publications: false
+  current_role:
+    type: Postdoc
+    title: Postdoc
+    start_date: Winter 2026
+  bio: Works on AI Misinformation Mitigation
+  avatar: /assets/images/bio/Dorsaf Sallami.jpg
+  social_media_links:
+  - label: Website
+    url: https://dorsafsallami.github.io/
+  - label: GitHub
+    url: https://github.com/dorsafsallami
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=wUa3IWgAAAAJ&hl=fr&oi=ao
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/dorsaf-sallemi/
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   avatar: /assets/images/bio/sahar.omidi.shayegan.avatar.webp
