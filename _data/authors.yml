@@ -18,6 +18,14 @@ Andrey Ambartsumov:
     url: https://github.com/an-andrey
   - label: LinkedIn
     url: https://www.linkedin.com/in/andrey-ambartsumov/
+Taimaa Kassab Bachi:
+  name: Taimaa Kassab Bachi
+  auto_update_publications: true
+  current_role:
+    type: Faculty
+    title: Undergraduate
+    start_date: January 2026
+    affiliation: Mila, McGill
 Heather Bosiljevac:
   name: Heather Bosiljevac
   current_role:
