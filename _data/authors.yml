@@ -22,8 +22,8 @@ Taimaa Kassab Bachi:
   name: Taimaa Kassab Bachi
   auto_update_publications: true
   current_role:
-    type: Faculty
-    title: Undergraduate
+    type: Student
+    title: Intern
     start_date: January 2026
     affiliation: Mila, McGill
 Heather Bosiljevac:
