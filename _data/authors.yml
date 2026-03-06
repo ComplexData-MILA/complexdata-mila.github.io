@@ -1,3 +1,32 @@
+Andrey Ambartsumov:
+  name: Andrey Ambartsumov
+  auto_update_publications: false
+  current_role:
+    type: Student
+    title: Undergraduate
+    start_date: Winter 2026
+    advisor: Victor Livernoche, Reihaneh Rabbany
+    affiliation: McGill
+    research_directions:
+    - poli-sci
+  bio: Generative AI, Graph Learning, Deep Learning
+  avatar: /assets/images/bio/Andrey Ambartsumov.jpg
+  social_media_links:
+  - label: Website
+    url: https://an-andrey.github.io/
+  - label: GitHub
+    url: https://github.com/an-andrey
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/andrey-ambartsumov/
+Taimaa Kassab Bachi:
+  name: Taimaa Kassab Bachi
+  auto_update_publications: true
+  current_role:
+    type: Student
+    title: Intern
+    start_date: January 2026
+    advisor: Victor Livernoche, Reihaneh Rabbany
+    affiliation: Mila, McGill
 Heather Bosiljevac:
   name: Heather Bosiljevac
   current_role:
@@ -20,7 +49,7 @@ Aurélien Bück-Kaeffer:
   name: Aurélien Bück-Kaeffer
   auto_update_publications: false
   current_role:
-    type: Collaborator
+    type: Student
     title: Intern
     start_date: Feb 2025
     affiliation: Mila, McGill
@@ -293,11 +322,27 @@ Yifei Li:
   - label: LinkedIn
     url: https://www.linkedin.com/in/yifeili2/
 
+Andrew Lin:
+  name: Andrew Lin
+  auto_update_publications: false
+  current_role:
+    type: Student
+    title: Intern
+    start_date: Winter 2026
+    advisor: Pratheeksha Nair, Reihaneh Rabbany
+    affiliation: McGill
+    research_directions:
+    - poli-sci
+  bio: Working on improving LLMs as Fact-Checkers
+  avatar: /assets/images/bio/Andrew Lin.jpg
+  social_media_links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/zhenyuanlin
 Victor Livernoche:
   name: Victor Livernoche
   avatar: /assets/images/bio/victor.livernoche.avatar.webp
   bio: Working on generative AI
-  semantic_scholar_id: '2219226719'
+  semantic_scholar_id: "2219226719"
   username: victor.livernoche
   auto_update_publications: false
   current_role:
@@ -318,6 +363,30 @@ Victor Livernoche:
   - label: LinkedIn
     url: https://www.linkedin.com/in/victor-livernoche/
 
+Sitao Luan:
+  name: Sitao Luan
+  auto_update_publications: true
+  current_role:
+    type: Postdoc
+    title: Postdoc
+    start_date: June 2025
+    advisor: Reihaneh Rabbany, Guillaume Rabusseau
+    affiliation: Mila, UdeM
+  bio: Work on Graph Learning, LLM Reasoning, AI4Science
+  note: Feel free to contact me for discussion and collaboration
+  semantic_scholar_id: '121556146'
+  avatar: /assets/images/bio/Sitao Luan.jpg
+  social_media_links:
+  - label: Website
+    url: https://scholar.google.ca/citations?user=sS1NezIAAAAJ&hl=zh-CN&oi=sra
+  - label: Twitter
+    url: https://x.com/SitaoLuan
+  - label: GitHub
+    url: https://github.com/SitaoLuan
+  - label: Scholar
+    url: https://scholar.google.ca/citations?user=sS1NezIAAAAJ&hl=zh-CN&oi=sra
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/sitao-luan-950a0bb4/
 Sacha Levy:
   name: Sacha Lévy
   avatar: /assets/images/bio/sacha.levy.avatar.webp
@@ -341,7 +410,6 @@ Sacha Levy:
     url: https://www.linkedin.com/in/sacha-levy/
   - label: GitHub
     url: https://github.com/sachalevy
-
 
 Shahrad Mohammadzadeh:
   name: Shahrad Mohammadzadeh
@@ -382,7 +450,7 @@ Andreea Musulan:
     research_directions:
     - poli-sci
   bio: Works on malicious coordinated activity online
-  semantic_scholar_id: '116225563'
+  semantic_scholar_id: "116225563"
   avatar: /assets/images/bio/Andreea Musulan.jpg
   social_media_links:
   - label: Website
@@ -488,7 +556,7 @@ Kellin Pelrine:
     start_date: Fall 2022
     affiliation: Mila, McGill
     research_directions:
-      - poli-sci
+    - poli-sci
   social_media_links:
   - label: Website
     url: https://kellinpelrine.github.io/
@@ -559,6 +627,27 @@ Reihaneh Rabbany:
   - label: LinkedIn
     url: https://www.linkedin.com/in/reihaneh-rabbany/
 
+Dorsaf Sallami:
+  name: Dorsaf Sallami
+  auto_update_publications: false
+  current_role:
+    type: Postdoc
+    title: Postdoc
+    affiliation: Mila
+    research_directions:
+    - poli-sci
+    start_date: Winter 2026
+  bio: Works on AI Misinformation Mitigation
+  avatar: /assets/images/bio/Dorsaf Sallami.jpg
+  social_media_links:
+  - label: Website
+    url: https://dorsafsallami.github.io/
+  - label: GitHub
+    url: https://github.com/dorsafsallami
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=wUa3IWgAAAAJ&hl=fr&oi=ao
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/dorsaf-sallemi/
 Sahar Omidi Shayegan:
   name: Sahar Omidi Shayegan
   avatar: /assets/images/bio/sahar.omidi.shayegan.avatar.webp
@@ -638,7 +727,7 @@ Maximilian Puelma Touzel:
   avatar: /assets/images/bio/Maximilian Puelma Touzel.jpg
   bio: Research scientist in human and machine social decision-making for social impact
   username: puelmatm
-  semantic_scholar_id: '114414606'
+  semantic_scholar_id: "114414606"
   current_role:
     type: Staff
     title: Research Associate
@@ -745,12 +834,11 @@ Hao Yu:
   - label: LinkedIn
     url: https://www.linkedin.com/in/haoy/
 
-
 Svetlana Zhuk:
   name: Svetlana Zhuk
   auto_update_publications: false
   current_role:
-    type: Student
+    type: Collaborator
     title: Master
     start_date: May 2024
     affiliation: Mila, University of Montreal
