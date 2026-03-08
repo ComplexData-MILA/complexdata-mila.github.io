@@ -784,6 +784,7 @@ Tong Wu:
     type: Student
     title: Intern
     start_date: Jan 2026
+    advisor: Emma Kondrup, Zachary Yang, Reihaneh Rabbany
     affiliation: Mila, Mcgill
   social_media_links:
   - label: Website
