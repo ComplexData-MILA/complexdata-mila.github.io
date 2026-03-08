@@ -777,6 +777,19 @@ Junhao Wang:
   - label: Scholar
     url: https://scholar.google.com/citations?hl=en&user=Nfg0gaoAAAAJ
 
+Tong Wu:
+  name: Tong Wu
+  auto_update_publications: false
+  current_role:
+    type: Student
+    title: Intern
+    start_date: Jan 2026
+    affiliation: Mila, Mcgill
+  social_media_links:
+  - label: Website
+    url: https://portfolio-ofbreads-projects.vercel.app/
+  - label: GitHub
+    url: https://github.com/ofbread
 Zachary Yang:
   name: Zachary Yang
   avatar: /assets/images/bio/zachary.yang.avatar.webp
