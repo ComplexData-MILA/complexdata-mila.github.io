@@ -238,12 +238,10 @@ Emma Kondrup:
   auto_update_publications: false
   current_role:
     type: Student
-    title: Intern
-    start_date: May 2025
-    advisor: Reihaneh Rabbany
-    affiliation: Mila
+    title: PhD
+    advisor: Reihaneh Rabbany, Catherine Régis
     research_directions:
-    - temporal-graph-learning
+    - poli-sci
   social_media_links:
   - label: Website
     url: https://ekmpa.github.io
@@ -253,6 +251,10 @@ Emma Kondrup:
     url: https://scholar.google.ca/citations?user=Ov-LMukAAAAJ&hl=fr&oi=ao
   - label: LinkedIn
     url: https://www.linkedin.com/in/emmakondrup/
+  avatar: /assets/images/bio/Emma Kondrup.jpg
+  past_roles:
+  - type: None
+    title: _No response_
 Elahe Kooshafar:
   name: Elahe Kooshafar
   avatar: /assets/images/bio/elahe.kooshafar.avatar.webp
