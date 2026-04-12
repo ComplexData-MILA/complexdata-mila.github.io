@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 import re
+from urllib.error import HTTPError, URLError
 from urllib.request import urlopen, urlretrieve
 from collections import OrderedDict
 
@@ -50,15 +51,24 @@ def parse_issue_body(body):
 
 def find_urls(text):
     """
-    1. Find all urls using regex: https://stackoverflow.com/a/840110/13837091
-    2. Remove the trailing ")"
-    3. Get unique URLs only (set comprehension -> list)
+    Find URLs in markdown links/images, HTML tags, and plain text.
+    Return unique URLs while preserving order.
     """
-    return list(
-        OrderedDict.fromkeys(
-            [s for s in re.findall("(?P<url>https?://[^\s)]+)", text)]
-        )
-    )
+    if not text:
+        return []
+
+    patterns = [
+        r"\((https?://[^\s)]+)\)",
+        r"(?:src|href)=[\"'](https?://[^\"']+)[\"']",
+        r"https?://[^\s<>)\"']+",
+    ]
+
+    urls = []
+    for pattern in patterns:
+        urls.extend(re.findall(pattern, text))
+
+    cleaned_urls = [url.rstrip('.,;:!?"\'') for url in urls]
+    return list(OrderedDict.fromkeys(cleaned_urls))
 
 def get_non_alpha(text):
     for ch in text:
@@ -125,7 +135,11 @@ def save_url_image(
             file_path = image_dir / f"{fname}"
 
         image_dir.mkdir(parents=True, exist_ok=True)
-        urlretrieve(url, str(file_path))
+        try:
+            urlretrieve(url, str(file_path))
+        except (HTTPError, URLError, ValueError) as e:
+            print(f"Could not download {url} due to error: {e}")
+            continue
 
         if ext in ["svg", "gif"]:
             return "/" + str(file_path)
