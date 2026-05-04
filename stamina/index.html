@@ -189,7 +189,7 @@
             </li>
           --><!-- END TALK TEMPLATE -->
           
-            <br>
+            <br>    
 
             <h4>2026/05/05</h4>
             <li>
@@ -215,6 +215,34 @@
               <div class="collapse" id="20260505-abstract">
                 <div class="card card-body">
                   Large Language Models (LLMs) are increasingly used to simulate human users in interactive settings such as therapy, education, and social role-play. While these simulations enable scalable training and evaluation of AI agents, off-the-shelf LLMs often drift from their assigned personas, contradict earlier statements, or abandon role-appropriate behavior. We introduce a unified framework for evaluating and improving consistency in LLM-generated dialogue with multi-turn RL, reducing inconsistency by over 55%, resulting in more coherent and trustworthy simulated users. 
+                </div>
+              </div>
+            </li>
+
+            <h4>2026/05/19</h4>
+            <li>
+              <b><a href="[PAPER LINK]">The Chameleon's Limit: Investigating Persona Collapse and Homogenization in Large Language Models</a></b>
+              <br>
+              Presenter: <u><a href="https://abdulhaim.github.io/" target="_blank" rel="noopener noreferrer">Marwa Abdulhai</a></u>, UC Berkeley AI Research (BAIR) Lab
+              <a class="btn btn-info btn-xs" data-toggle="collapse" href="#20260505-bio" role="button" aria-expanded="false">
+                Speaker Bio
+              </a>
+              <div class="collapse" id="20260505-bio">
+                <div class="card card-body">
+                  Yunze (Lorenzo) Xiao is a Master’s student at Carnegie Mellon University’s Language Technologies Institute, advised by Prof. Mona Diab. His research aims to develop large language models that move beyond surface-level fluency toward genuine human-like intelligence, spanning anthropomorphism as a controllable modeling dimension, persona consistency, long-horizon memory, affective simulation, and multi-agent systems, with applications in education and therapy. He has published at ACL, EMNLP, and LREC-COLING, including InCharacter and ToxiCloakCN, and previously conducted research at SUTD and QCRI on multilingual NLP, propaganda detection, and AI safety. He co-organized the NeurIPS 2025 PersonaLLM workshop.
+                </div>
+              </div>
+              <br>
+              <!-- <a href="[RECORDING LINK - ADD AFTER TALK]"><img src="https://img.shields.io/badge/Youtube-Recording-orange"></a> -->
+              <!-- <a href="[PAPER LINK]"><img src="https://img.shields.io/badge/Paper-link-important"></a> -->
+              <!-- <a href="[GITHUB_LINK]"><img src="https://img.shields.io/badge/Github-link-lightgrey"></a> -->
+              <!-- <a href="[SLIDES_LINK]"><img src="https://img.shields.io/badge/Talk-Slides-blue"></a> -->
+              <a class="btn btn-primary btn-xs" data-toggle="collapse" href="#20260505-abstract" role="button" aria-expanded="false">
+                Abstract
+              </a>
+              <div class="collapse" id="20260505-abstract">
+                <div class="card card-body">
+                  Applications based on large language models (LLMs), such as multi-agent simulations, require population diversity among agents. We identify a pervasive failure mode we term \emph{Persona Collapse}: agents each assigned a distinct profile nonetheless converge into a narrow behavioral mode, producing a homogeneous simulated population. To quantify persona collapse, we propose a framework that measures how much of the persona space a population occupies (Coverage), how evenly agents spread across it (Uniformity), and how rich the resulting behavioral patterns are (Complexity). Evaluating ten LLMs on personality simulation (BFI-44), moral reasoning, and self-introduction, we observe persona collapse along two axes: (1) Dimensions: a model can appear diverse on one axis yet structurally degenerate on another, and (2) Domains: the same model may collapse the most in personality yet be the most diverse in moral reasoning. Furthermore, item-level diagnostics reveal that behavioral variation tracks coarse demographic stereotypes rather than the fine-grained individual differences specified in each persona. Counter-intuitively, \textbf{the models achieving the highest per-persona fidelity consistently produce the most stereotyped populations}. We release our toolkit and data to support population-level evaluation of LLMs.
                 </div>
               </div>
             </li>
