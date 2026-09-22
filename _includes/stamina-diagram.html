@@ -1,0 +1,96 @@
+{% comment %}
+  "What STAMINA works on" diagram for the STAMINA page (styles: stamina/css/plain-style.css).
+  Plain HTML + inline SVG: real text, scales cleanly, stacks on narrow screens.
+{% endcomment %}
+<figure class="stam-diagram">
+  <figcaption class="sr-only">The three research areas STAMINA brings together, and the disciplines its members come from.</figcaption>
+
+  <ul class="stam-pillars">
+    <li class="stam-pillar stam-pillar--tech">
+      <svg class="stam-icon" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
+        <circle cx="16" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M6 34c0-5.5 4.5-9 10-9s10 3.5 10 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <rect x="26" y="8" width="17" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M31 24.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="31.5" cy="14.5" r="1.6" fill="currentColor"/>
+        <circle cx="37.5" cy="14.5" r="1.6" fill="currentColor"/>
+        <path d="M30 34h13M36.5 30.5v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h4>Social interaction technologies</h4>
+      <p>Designing platforms and interfaces that foster constructive connection.</p>
+    </li>
+
+    <li class="stam-pillar stam-pillar--sim">
+      <svg class="stam-icon" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="13" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="24" cy="10" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="36" cy="13" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M16 16.5 20 13M28 13l4 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M7 40V27M17 40V22M27 40V30M37 40V24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <h4>Social simulations &amp; modelling</h4>
+      <p>Modelling complex human&ndash;agent behaviour to understand societal crises.</p>
+    </li>
+
+    <li class="stam-pillar stam-pillar--ai">
+      <svg class="stam-icon" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
+        <rect x="8" y="14" width="19" height="17" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M17.5 14V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="17.5" cy="6.5" r="2" fill="currentColor"/>
+        <circle cx="14" cy="22" r="1.8" fill="currentColor"/>
+        <circle cx="21" cy="22" r="1.8" fill="currentColor"/>
+        <path d="M14 27h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M36 15.5l7 3v8c0 5-3 9.5-7 11.5-4-2-7-6.5-7-11.5v-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M32.5 25.5l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h4>AI agents &amp; safety</h4>
+      <p>Keeping AI that extends platform affordances responsible and pro-truth.</p>
+    </li>
+  </ul>
+
+  <div class="stam-flow">
+    <div class="stam-flow-end">
+      <svg class="stam-net" viewBox="0 0 120 80" role="img" aria-hidden="true" focusable="false">
+        <g stroke="currentColor" stroke-width="1.5" opacity="0.5">
+          <path d="M18 60 46 24M46 24 88 44M88 44 62 66M62 66 18 60M46 24 70 14M100 24 88 44"/>
+          <path d="M28 30 52 48" stroke-dasharray="4 4"/>
+          <path d="M70 14 104 60" stroke-dasharray="4 4"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="18" cy="60" r="4"/><circle cx="46" cy="24" r="5"/><circle cx="88" cy="44" r="4.5"/>
+          <circle cx="62" cy="66" r="3.5"/><circle cx="70" cy="14" r="3"/><circle cx="100" cy="24" r="3"/>
+          <circle cx="28" cy="30" r="2.5"/><circle cx="104" cy="60" r="2.5"/><circle cx="52" cy="48" r="2.5"/>
+        </g>
+      </svg>
+      <span>Epistemic &amp; social crises</span>
+    </div>
+
+    <svg class="stam-arrow" viewBox="0 0 64 24" role="img" aria-hidden="true" focusable="false">
+      <path d="M2 12h50M44 5l9 7-9 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <div class="stam-flow-end stam-flow-end--good">
+      <svg class="stam-net" viewBox="0 0 120 80" role="img" aria-hidden="true" focusable="false">
+        <g stroke="currentColor" stroke-width="1.5" opacity="0.6">
+          <path d="M60 40 26 22M60 40 94 22M60 40 26 58M60 40 94 58M60 40 60 10M60 40 60 70"/>
+          <path d="M26 22 60 10M60 10 94 22M26 58 60 70M60 70 94 58"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="26" cy="22" r="4"/><circle cx="94" cy="22" r="4"/><circle cx="26" cy="58" r="4"/>
+          <circle cx="94" cy="58" r="4"/><circle cx="60" cy="10" r="4"/><circle cx="60" cy="70" r="4"/>
+        </g>
+        <circle cx="60" cy="40" r="7" fill="currentColor"/>
+      </svg>
+      <span>Pro-social, pro-truth applications</span>
+    </div>
+  </div>
+
+  <p class="stam-fields">
+    <span class="stam-fields-label">Members come from</span>
+    <span class="stam-chip">Computer science</span>
+    <span class="stam-chip">Social sciences</span>
+    <span class="stam-chip">Psychology</span>
+    <span class="stam-chip">Policy</span>
+    <span class="stam-chip">Industry &amp; start-ups</span>
+  </p>
+</figure>
