@@ -5,48 +5,35 @@
 <figure class="stam-diagram">
   <figcaption class="sr-only">The three research areas STAMINA brings together, and the disciplines its members come from.</figcaption>
 
-  <ul class="stam-pillars">
-    <li class="stam-pillar stam-pillar--tech">
-      <svg class="stam-icon" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
-        <circle cx="16" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M6 34c0-5.5 4.5-9 10-9s10 3.5 10 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        <rect x="26" y="8" width="17" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M31 24.5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="31.5" cy="14.5" r="1.6" fill="currentColor"/>
-        <circle cx="37.5" cy="14.5" r="1.6" fill="currentColor"/>
-        <path d="M30 34h13M36.5 30.5v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      </svg>
-      <h4>Social interaction technologies</h4>
-      <p>Designing platforms and interfaces that foster constructive connection.</p>
-    </li>
+  <svg class="stam-venn" viewBox="0 0 470 410" role="img"
+       aria-label="Venn diagram: STAMINA sits where social interaction technologies, social simulations and modelling, and AI agents and safety overlap.">
+    <defs>
+      <clipPath id="stam-clip-tech"><circle cx="155" cy="158" r="130"/></clipPath>
+      <clipPath id="stam-clip-sim"><circle cx="305" cy="158" r="130"/></clipPath>
+    </defs>
+    <g class="stam-venn-lobes">
+      <circle cx="155" cy="158" r="130" class="stam-venn-tech"/>
+      <circle cx="305" cy="158" r="130" class="stam-venn-sim"/>
+      <circle cx="230" cy="272" r="130" class="stam-venn-ai"/>
+    </g>
+    <g clip-path="url(#stam-clip-tech)">
+      <g clip-path="url(#stam-clip-sim)">
+        <circle cx="230" cy="272" r="130" class="stam-venn-core-shape"/>
+      </g>
+    </g>
+    <text class="stam-venn-label stam-venn-label--tech" x="95" y="158">
+      <tspan x="95">Social interaction</tspan>
+      <tspan x="95" dy="17">technologies</tspan>
+    </text>
+    <text class="stam-venn-label stam-venn-label--sim" x="365" y="158">
+      <tspan x="365">Social simulations</tspan>
+      <tspan x="365" dy="17">&amp; modelling</tspan>
+    </text>
+    <text class="stam-venn-label stam-venn-label--ai" x="230" y="352">
+      <tspan x="230">AI agents &amp; safety</tspan>
+    </text>
+  </svg>
 
-    <li class="stam-pillar stam-pillar--sim">
-      <svg class="stam-icon" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
-        <circle cx="12" cy="13" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
-        <circle cx="24" cy="10" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
-        <circle cx="36" cy="13" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M16 16.5 20 13M28 13l4 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        <path d="M7 40V27M17 40V22M27 40V30M37 40V24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-      </svg>
-      <h4>Social simulations &amp; modelling</h4>
-      <p>Modelling complex human&ndash;agent behaviour to understand societal crises.</p>
-    </li>
-
-    <li class="stam-pillar stam-pillar--ai">
-      <svg class="stam-icon" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
-        <rect x="8" y="14" width="19" height="17" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M17.5 14V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="17.5" cy="6.5" r="2" fill="currentColor"/>
-        <circle cx="14" cy="22" r="1.8" fill="currentColor"/>
-        <circle cx="21" cy="22" r="1.8" fill="currentColor"/>
-        <path d="M14 27h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        <path d="M36 15.5l7 3v8c0 5-3 9.5-7 11.5-4-2-7-6.5-7-11.5v-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-        <path d="M32.5 25.5l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <h4>AI agents &amp; safety</h4>
-      <p>Keeping AI that extends platform affordances responsible and pro-truth.</p>
-    </li>
-  </ul>
 
   <div class="stam-flow">
     <div class="stam-flow-end">
