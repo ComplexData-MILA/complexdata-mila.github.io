@@ -1,0 +1,22 @@
+/*
+   Base font size
+   The theme grows the root font size with the screen (16px phone up to 22px on wide
+   screens), which makes everything look zoomed in on laptops and desktops. Keep the
+   scale gentler; every rem-based size follows.
+   ========================================================================== */
+
+html {
+    font-size: 16px;
+
+    @include breakpoint($medium) {
+        font-size: 16px;
+    }
+
+    @include breakpoint($large) {
+        font-size: 17px;
+    }
+
+    @include breakpoint($x-large) {
+        font-size: 18px;
+    }
+}
