@@ -19,18 +19,12 @@ jobs:
       - name: Install Python requirements
         run: pip install -r src/python/requirements.txt
 
+      # One form adds or updates a member depending on whether the name exists; the older
+      # add/update labels are still accepted for issues opened before the forms were merged.
       - name: "Update _data/authors.yml with src/python/add_update_member.py"
-        if: github.event.label.name == 'automatic-add-member'
+        if: contains(fromJSON('["automatic-add-update-member", "automatic-add-member", "automatic-update-member"]'), github.event.label.name)
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
-          ACTION: Add member
-        run: python -m src.python.add_update_member
-      
-      - name: "Update _data/authors.yml with src/python/add_update_member.py"
-        if: github.event.label.name == 'automatic-update-member'
-        env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
-          ACTION: Update member
         run: python -m src.python.add_update_member
       
       - name: "Create post in _posts/papers with src/python/add_update_publication.py"
