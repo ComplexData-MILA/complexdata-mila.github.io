@@ -214,7 +214,8 @@ Aarash Feizi:
   bio: Works on multi-modal self-supervised learning and applied machine learning
     techniques in CV and NLP for social good with real-world impacts.
   username: feiziaar
-  note: "Fast-tracked to PhD in May 2021. Thesis: On the Challenges of Applying Vision and Language Models in Real-World. FRQNT PhD Scholarship."
+  note: "Fast-tracked to PhD in May 2021. Thesis: On the Challenges of Applying Vision\
+    \ and Language Models in Real-World. FRQNT PhD Scholarship."
   semantic_scholar_id: "1962954677"
   auto_update_publications: false
   current_role:
@@ -322,7 +323,8 @@ Raika Karimi:
 
 Emma Kondrup:
   name: Emma Kondrup
-  bio: Online harms, applied graph machine learning and technology-facilitated gender-based violence.
+  bio: Online harms, applied graph machine learning and technology-facilitated gender-based
+    violence.
   auto_update_publications: false
   current_role:
     type: Student
@@ -560,7 +562,8 @@ Pratheeksha Nair:
   avatar: /assets/images/bio/pratheeksha.nair.avatar.webp
   bio: AI for social good applications - fighting online organized crime; Weak Supervision
     and Graph Machine Learning
-  note: "Thesis: Learning from Weak Supervision: Insights from Human Trafficking Detection. FRQNT PhD Scholarship."
+  note: "Thesis: Learning from Weak Supervision: Insights from Human Trafficking Detection.\
+    \ FRQNT PhD Scholarship."
   semantic_scholar_id: "48761500"
   auto_update_publications: false
   current_role:
@@ -672,7 +675,8 @@ Farimah Poursafaei:
   name: Farimah Poursafaei
   avatar: /assets/images/bio/Farimah.JPG
   bio: Machine Learning on Temporal Graphs
-  note: "PhD co-supervised with Zeljko Zilic (primary supervisor) from December 2020. Thesis: Anomaly detection in cryptocurrency networks and beyond."
+  note: "PhD co-supervised with Zeljko Zilic (primary supervisor) from December 2020.\
+    \ Thesis: Anomaly detection in cryptocurrency networks and beyond."
   current_role:
     type: Unaffiliated
     title: "Postdoctoral Fellow @ McGill → Model Evaluation Scientist @ BNP Paribas"
@@ -741,6 +745,7 @@ Sebastian Sabry:
     advisor: Reihaneh Rabbany
     start_date: Summer 2025
     affiliation: Mila, McGill
+  avatar: /assets/images/bio/Sebastian Sabry.jpg
 Dorsaf Sallami:
   name: Dorsaf Sallami
   auto_update_publications: false
@@ -778,7 +783,8 @@ Sahar Omidi Shayegan:
   semantic_scholar_id: "2302559514"
   username: sahar.omidishayegan
   auto_update_publications: false
-  note: "Thesis: Learning Political Ideologies in Ambiguous Contexts Using Language and Graph-Based Representations."
+  note: "Thesis: Learning Political Ideologies in Ambiguous Contexts Using Language\
+    \ and Graph-Based Representations."
   current_role:
     type: Unaffiliated
     title: "ML Scientist @ Veris AI"
@@ -963,7 +969,8 @@ Zachary Yang:
   auto_update_publications: false
   current_role:
     type: Unaffiliated
-    title: "AI Researcher, Online Safety Team @ Ubisoft La Forge → Senior Applied Research Scientist, AI Safety Studio @ Mila"
+    title: "AI Researcher, Online Safety Team @ Ubisoft La Forge → Senior Applied\
+      \ Research Scientist, AI Safety Studio @ Mila"
   past_roles:
   - type: Student
     title: PhD
