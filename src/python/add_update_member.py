@@ -162,7 +162,11 @@ def sort_by_lastname(authors: Dict) -> None:
         authors.insert(0, user, desc)
 
 
-def main(parsed: Dict, action: str, site_data_dir: str = "_data/", image_dir: str = "assets/images/bio") -> Dict:
+def main(parsed: Dict, action: Optional[str] = None, site_data_dir: str = "_data/", image_dir: str = "assets/images/bio") -> Dict:
+    """Add the member if the name is new, otherwise update only the fields filled in.
+
+    `action` is kept for backwards compatibility and no longer changes the behaviour.
+    """
     site_data_dir = Path(site_data_dir)
     profile = format_parsed_content(parsed)
 
@@ -173,8 +177,18 @@ def main(parsed: Dict, action: str, site_data_dir: str = "_data/", image_dir: st
    
     name_to_username = {authors[username]["name"]: username for username in authors}
 
-    if action == "Add member" and profile["name"] not in name_to_username:
+    if profile["name"] not in name_to_username:
+        # New member
+        role = profile.get("current_role") or {}
+        if "type" not in role or "title" not in role:
+            raise ValueError(
+                f'{profile["name"]} is not on the website yet: to add them, fill in at least '
+                '"Current Role Type" and "Current Role Title". To update an existing profile, '
+                'check that the name matches it exactly.'
+            )
         profile.setdefault("auto_update_publications", False)
+        if "past_roles" in profile:
+            profile["past_roles"] = [profile["past_roles"]]
         username = profile["name"]
         if username in authors:
             n = 2
@@ -183,12 +197,7 @@ def main(parsed: Dict, action: str, site_data_dir: str = "_data/", image_dir: st
             username = k
         authors[username] = profile
     else:
-        # Update, or an "Add member" for someone already listed (e.g. a placeholder
-        # entry created by a maintainer): merge into the existing entry instead of
-        # creating a duplicate.
-        if profile["name"] not in name_to_username:
-            raise ValueError(f'{profile["name"]} not in authors')
-
+        # Existing member: merge in only the fields that were filled in
         username = name_to_username[profile["name"]]
         authors[username] = merge_profile_data(authors[username], profile)
 
@@ -215,6 +224,5 @@ def main(parsed: Dict, action: str, site_data_dir: str = "_data/", image_dir: st
 
 if __name__ == "__main__":
     issue_body = os.environ["ISSUE_BODY"]
-    action = os.environ["ACTION"]
     parsed = parse_issue_body(issue_body)
-    main(parsed, action)
+    main(parsed)
