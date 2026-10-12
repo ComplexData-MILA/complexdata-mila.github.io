@@ -66,10 +66,11 @@ def process_role_data(parsed: Dict, prefix: str = "") -> Optional[Dict]:
 
 def format_parsed_content(parsed: Dict) -> Dict:
     """Format the parsed content into the new structure."""
-    formatted = {
-        "name": parsed["name"],
-        "auto_update_publications": parsed.get("auto_update_publications", "False") == "True"
-    }
+    formatted = {"name": parsed["name"]}
+
+    # Left blank on an update, the existing setting is kept; new members default to False
+    if is_filled(parsed.get("auto_update_publications")):
+        formatted["auto_update_publications"] = parsed["auto_update_publications"] == "True"
 
     # Process current role
     current_role = process_role_data(parsed, "current_role_")
@@ -173,6 +174,7 @@ def main(parsed: Dict, action: str, site_data_dir: str = "_data/", image_dir: st
     name_to_username = {authors[username]["name"]: username for username in authors}
 
     if action == "Add member" and profile["name"] not in name_to_username:
+        profile.setdefault("auto_update_publications", False)
         username = profile["name"]
         if username in authors:
             n = 2

@@ -71,13 +71,13 @@ body:
     id: auto_update_publications
     attributes:
       label: "Auto Update Publications"
-      description: Do you want your publications to be auto-updated?
+      description: Do you want your publications to be auto-updated? Leave blank to keep the current setting.
       multiple: false
       options:
         - "False"
         - "True"
     validations:
-      required: True
+      required: false
 
   - type: dropdown
     id: current_role-type
