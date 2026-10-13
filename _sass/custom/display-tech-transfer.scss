@@ -90,6 +90,11 @@
     text-decoration: none !important;
     transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 
+    // Beat the theme's a:visited colour, which otherwise sticks after a click
+    &:visited {
+        color: #9b3a2b;
+    }
+
     &:hover,
     &:focus-visible {
         background: #f6efed;
@@ -102,6 +107,10 @@
     background: #9b3a2b;
     border-color: #9b3a2b;
     color: #fff;
+
+    &:visited {
+        color: #fff;
+    }
 
     &:hover,
     &:focus-visible {
