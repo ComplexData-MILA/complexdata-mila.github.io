@@ -28,10 +28,6 @@ Toxic and harmful speech online is more than just unpleasant; it has widespread 
 {% include posts-highlighted-publications.html taxonomy="online-toxicity" %}
 
 
-# Core Team Members
-
-{% include team-gallery.html authors=site.data.authors research_direction="online-toxicity" render_current_role=true %}
-
 # Funding
 
 We acknowledge funding from Ubisoft, the Canadian Institute for Advanced Research (CIFAR AI Chair Program) and Natural Sciences and Engineering Research Council of Canada (NSERC) Postgraduate Scholarship-Doctoral (PGS D) Award. Funding from Ubisoft is governed through the Mitacs Accelerate Program.
