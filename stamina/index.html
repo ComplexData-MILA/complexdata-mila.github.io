@@ -12,6 +12,19 @@ layout: null  # standalone Bootstrap page; don't wrap in the site theme
   <meta name="author" content="">
   <title>STAMINA Working Group</title>
 
+  <!-- Light/dark mode: set before the stylesheets load so the page doesn't flash.
+       Uses the visitor's saved choice, otherwise their system setting. -->
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem('stamina-theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
@@ -52,8 +65,20 @@ layout: null  # standalone Bootstrap page; don't wrap in the site theme
           <li><a class="page-scroll" href="#about">About</a></li>
           <li><a class="page-scroll" href="#schedule">Upcoming Talks</a></li>
           <li><a class="page-scroll" href="#past-talks">Past Talks</a></li>
+          <li><a class="page-scroll" href="#community-events">Community Events</a></li>
           <li><a class="page-scroll" href="#organizers">Organizers</a></li>
           <li><a href="https://www.complexdatalab.com">ComplexDataLab</a></li>
+          <li>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode">
+              <svg class="theme-toggle-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="currentColor"/>
+              </svg>
+              <svg class="theme-toggle-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="4.5" fill="currentColor"/>
+                <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1l2.1-2.1M17 7l2.1-2.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -233,6 +258,33 @@ layout: null  # standalone Bootstrap page; don't wrap in the site theme
   </section>
 
 
+  <!-- ============================================================
+       SECTION: COMMUNITY EVENTS
+       ============================================================ -->
+  <section id="community-events" class="some-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="listing" style="clear:both;">
+
+            <h3 style="text-align:center">Community Events</h3>
+            <p>Workshops in the <a href="https://sites.google.com/view/social-sims-with-llms">Social Simulation with LLMs</a> series:</p>
+            <ul>
+              <li><a href="https://sites.google.com/view/social-sims-with-llms/social-sim27"><b>Social Sim'27: From Proxies to Populations</b></a> &middot; AAAI 2027, Montréal, Canada &middot; February 22 or 23, 2027 (date TBD)</li>
+              <li><a href="https://sites.google.com/view/social-sims-with-llms/social-sim26"><b>Social Sim'26: Fidelity in Applications</b></a> &middot; COLM 2026, San Francisco, USA &middot; October 9, 2026</li>
+              <li><a href="https://sites.google.com/view/social-sims-with-llms/social-sim25"><b>Social Sim'25</b></a> &middot; COLM 2025, Montréal, Canada &middot; October 2025</li>
+            </ul>
+
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- ============================================================
        SECTION: ORGANIZERS
@@ -282,7 +334,7 @@ layout: null  # standalone Bootstrap page; don't wrap in the site theme
                       <h4><a href="https://rstzzz.github.io/">Zachary Yang</a></h4>
                     </div>
                     <p>
-                      <u>Zachary Yang</u> is a Staff Researcher at Ubisoft where he researches social aspects of gaming platforms.
+                      <u>Zachary Yang</u> is a Research Scientist in the Safety Studio at Mila.
                       <br>
                       <a href="https://rstzzz.github.io/">Website</a>,
                       <a href="https://scholar.google.com/citations?user=ljOxbowAAAAJ&hl=en">Google Scholar</a>,
@@ -362,6 +414,25 @@ layout: null  # standalone Bootstrap page; don't wrap in the site theme
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/scrolling-nav.js"></script>
+  <script>
+    // Light/dark mode button in the navbar
+    (function () {
+      var root = document.documentElement;
+      var button = document.getElementById('theme-toggle');
+      function label() {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        button.setAttribute('aria-label', 'Switch to ' + next + ' mode');
+        button.setAttribute('title', 'Switch to ' + next + ' mode');
+      }
+      button.addEventListener('click', function () {
+        var theme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        try { localStorage.setItem('stamina-theme', theme); } catch (e) {}
+        label();
+      });
+      label();
+    })();
+  </script>
 
 </body>
 </html>
