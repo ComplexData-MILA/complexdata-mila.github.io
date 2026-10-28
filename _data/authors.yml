@@ -105,6 +105,26 @@ Jacob Chmura:
     start_date: Fall 2024
     end_date: Summer 2026
     affiliation: Mila, McGill
+Andrea Cini:
+  name: Andrea Cini
+  current_role:
+    type: Postdoc
+    title: SNSF Postdoc
+    start_date: Oct 2026
+    advisor: Reihaneh Rabbany
+    affiliation: Mila, McGill
+    research_directions:
+    - temporal-graph-learning
+  bio: Works on time series and graph processing.
+  avatar: /assets/images/bio/Andrea Cini.jpg
+  social_media_links:
+  - label: Website
+    url: https://andreacini.github.io/
+  - label: GitHub
+    url: https://github.com/andreacini
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=bQI2UIUAAAAJ
+  auto_update_publications: false
 Taylor Lynn Curtis:
   name: Taylor Lynn Curtis
   avatar: /assets/images/bio/Taylor Lynn Curtis.jpg
