@@ -631,6 +631,15 @@ Pratheeksha Nair:
   - label: LinkedIn
     url: https://www.linkedin.com/in/pnair96/
 
+Nardin Nakhla:
+  name: Nardin Nakhla
+  current_role:
+    type: Postdoc
+    title: Postdoc
+    start_date: August 2026
+  bio: Interested in AI safety, mechanistic interpretability and misinformation.
+  avatar: https://drive.google.com/file/d/10sjDUrIQFzrcqfBgNFA0rtUeek02HYzP/view?usp=sharing
+  auto_update_publications: false
 Soroush Omranpour:
   name: Soroush Omranpour
   avatar: /assets/images/bio/soroush.omranpour.avatar.webp
