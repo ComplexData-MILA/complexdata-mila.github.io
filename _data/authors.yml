@@ -295,6 +295,27 @@ Jean-Francois Godbout:
     url: https://scholar.google.com/citations?user=SsVx064AAAAJ&hl=en
   - label: LinkedIn
     url: https://www.linkedin.com/in/jean-fran%C3%A7ois-godbout-9aa130221
+Mattia Greiche:
+  name: Mattia Greiche
+  auto_update_publications: true
+  current_role:
+    type: Student
+    title: Intern
+    start_date: Summer 2026
+    advisor: Maximilian Puelma Touzel, Reihaneh Rabbany
+    affiliation: Mila, McGill
+    research_directions:
+    - poli-sci
+  bio: LLM-based social simulations and multi-agent AI safety
+  semantic_scholar_id: '2526709572'
+  avatar: https://drive.google.com/file/d/1AFFNDPSQs8kFDHg2csa2cfvhcx6EsmAS/view?usp=sharing
+  social_media_links:
+  - label: GitHub
+    url: https://github.com/mattiagreiche
+  - label: Scholar
+    url: https://scholar.google.ca/citations?user=NyHzjnkAAAAJ&hl=en
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/mattiagreiche/
 Shenyang Huang:
   name: Shenyang (Andy) Huang
   avatar: /assets/images/bio/shenyang.huang.avatar.webp
